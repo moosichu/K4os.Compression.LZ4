@@ -48,6 +48,7 @@ namespace K4os.Compression.LZ4.Test
 			Tools.SameBytes(original, unpickled);
 		}
 
+#if SPAN_SUPPORTED
 		[Theory]
 		[InlineData(0, 0)]
 		[InlineData(0, 1337)]
@@ -68,5 +69,6 @@ namespace K4os.Compression.LZ4.Test
 				LZ4Pickler.Unpickle(array),
 				LZ4Pickler.Unpickle(span.AsSpan()));
 		}
+#endif
 	}
 }

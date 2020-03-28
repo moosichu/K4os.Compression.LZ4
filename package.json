@@ -1,0 +1,11 @@
+{
+    "name": "k4os.compression.lz4",
+    "version": "1.1.11",
+    "displayName": "K4os.Compression.LZ4",
+    "description": "LZ4/LH4HC compression for .NET Standard 1.6/2.0 (formerly known as lz4net), converted to a Unity package by Tom Read Cutting",
+    "unity": "2019.3",
+    "author": {
+      "name": "Milosz Krajewski ",
+      "url": "https://github.com/MiloszKrajewski/K4os.Compression.LZ4"
+    }
+  }

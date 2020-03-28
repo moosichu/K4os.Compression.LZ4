@@ -1,0 +1,16 @@
+{
+    "name": "K4os.Compression.LZ4.Streams",
+    "references": [
+        "GUID:8808c7c0ed714904eabed673f797c94b",
+        "GUID:c5f83a76c0ef7dd4799fb26ce9fb5d4f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

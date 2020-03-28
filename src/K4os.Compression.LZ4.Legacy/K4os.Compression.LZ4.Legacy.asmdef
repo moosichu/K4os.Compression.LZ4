@@ -1,0 +1,15 @@
+{
+    "name": "K4os.Compression.LZ4.Legacy",
+    "references": [
+        "GUID:8808c7c0ed714904eabed673f797c94b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

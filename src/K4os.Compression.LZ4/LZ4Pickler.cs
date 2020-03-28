@@ -36,6 +36,7 @@ namespace K4os.Compression.LZ4
 				return Pickle(sourceP + sourceOffset, sourceLength, level);
 		}
 
+#if SPAN_SUPPORTED
 		/// <summary>Compresses input buffer into self-contained package.</summary>
 		/// <param name="source">Input buffer.</param>
 		/// <param name="level">Compression level.</param>
@@ -50,6 +51,7 @@ namespace K4os.Compression.LZ4
 			fixed (byte* sourceP = &MemoryMarshal.GetReference(source))
 				return Pickle(sourceP, sourceLength, level);
 		}
+#endif
 
 		/// <summary>Compresses input buffer into self-contained package.</summary>
 		/// <param name="source">Input buffer.</param>
@@ -102,6 +104,7 @@ namespace K4os.Compression.LZ4
 				return Unpickle(sourceP + sourceOffset, sourceLength);
 		}
 
+#if SPAN_SUPPORTED
 		/// <summary>Decompresses previously pickled buffer (see: <see cref="LZ4Pickler"/>.</summary>
 		/// <param name="source">Input buffer.</param>
 		/// <returns>Output buffer.</returns>
@@ -114,6 +117,7 @@ namespace K4os.Compression.LZ4
 			fixed (byte* sourceP = &MemoryMarshal.GetReference(source))
 				return Unpickle(sourceP, source.Length);
 		}
+#endif
 
 		/// <summary>Decompresses previously pickled buffer (see: <see cref="LZ4Pickler"/>.</summary>
 		/// <param name="source">Input buffer.</param>
